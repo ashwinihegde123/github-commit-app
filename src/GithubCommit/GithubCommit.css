@@ -1,0 +1,78 @@
+.home-title{
+    height: 50px;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px;
+    background: #fbd64a;
+}
+
+.commit-list-wrapper, .commit-details-wrapper{
+    width: 80%;
+    margin: auto;
+    padding: 12px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-bottom: 16px;
+}
+
+.single-commit{
+    box-shadow: 3px 3px 5px 6px #ccc;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.commit-author{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.commit-message{
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.repo-info{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.commit-details-author-img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.commit-details-wrapper div{
+    margin-bottom: 8px;
+}
+
+.home-icon{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.filter-chip{
+    width: auto;
+    margin: 4px;
+    border: 1px solid #017893;
+    padding: 4px 16px;
+    border-radius: 18px;
+    background: #10bfe752;
+}
+.filter-chip-selected{
+    background: #00b2db;
+    color: white;
+}
+
+.commit-filters{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
