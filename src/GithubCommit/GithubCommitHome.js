@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 import SingleCommit from './SingleCommit';
 import './GithubCommit.css';
 
-const GithubCommitHome = ({})=>{
+const GithubCommitHome = ()=>{
     const [commitList, setCommitList] = useState([]);
     const [filter, setFilter] = useState('');
     const history = useHistory();
@@ -72,7 +72,7 @@ const GithubCommitHome = ({})=>{
                 </div>
                 <div className="commit-list-wrapper">
                     <div className="repo-info">Github commits of 
-                    <a target="_blank" href="https://github.com/facebook/react"> https://github.com/facebook/react</a></div>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/facebook/react"> https://github.com/facebook/react</a></div>
                     {
                         commitList.map((commit)=> (
                             <div key={commit.sha} className="single-commit" onClick={() => navigateToDetails(commit)}>
